@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="FurniturePackage.FurniturePageController"
+      stylesheets="@/FurniturePackage/styles.css"
+      style="-fx-background-color: #f5f5f5; -fx-padding: 30;">
+
+    <Label text="2D Furniture Gallery" styleClass="title-label"/>
+
+    <VBox spacing="10.0" alignment="CENTER">
+        <Label text="Select a furniture item to view:" styleClass="subtitle-label"/>
+
+        <VBox spacing="8.0" alignment="CENTER" style="-fx-padding: 20; -fx-background-color: white; -fx-background-radius: 10;">
+            <Button text="🪑 Chair" onAction="#onViewChair" styleClass="furniture-button"/>
+            <Button text="🛏️ Bed" onAction="#onViewBed" styleClass="furniture-button"/>
+            <Button text="🚪 Cupboard" onAction="#onViewCupboard" styleClass="furniture-button"/>
+            <Button text="🪵 Table" onAction="#onViewTable" styleClass="furniture-button"/>
+            <Button text="📦 Rack" onAction="#onViewRack" styleClass="furniture-button"/>
+            <Button text="🪑 Bench" onAction="#onViewBench" styleClass="furniture-button"/>
+            <Button text="🚪 Door" onAction="#onViewDoor" styleClass="furniture-button"/>
+            <Button text="📚 BookShelf" onAction="#onViewBookshelf" styleClass="furniture-button"/>
+        </VBox>
+    </VBox>
+
+    <Button fx:id="backButton" text="← Back to Main Menu" onAction="#onBack" styleClass="back-button"/>
+
+</VBox>
